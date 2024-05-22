@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo em Desenvolvimento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Quicksand:wght@300..700&display=swap');
+        @font-face {
+            font-family: 'Yoster Island';
+            src: url('YosterIslandReg.woff2') format('woff2'),
+                url('YosterIslandReg.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: "Quicksand";
+            margin: 0;
+            padding: 0;
+            background-image: url('215982.gif');
+            backdrop-filter: blur(3px);
+            background-size: cover;
+            background-position: center;
+            color: #ccc;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Yoster Island';
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        p {
+            font-family: "Quicksand";
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .screenshot-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .screenshot {
+            flex: 1;
+            margin-bottom: 30px; /* Adicione margem inferior */
+        }
+        .screenshot img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .screenshot:nth-child(2) {
+            margin-left: 20px; /* Adicione margem esquerda apenas para a segunda captura de tela */
+        }
+        .ass {
+            color: #fff;
+        }
+        .btn:hover {
+            background-color: #444;
+        }
+        .iframe1 {
+            margin-top: -50px;
+            height: 385px;
+            width: 600px;
+            border: 0;
+            border-radius: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Rain<br>Bound</h1>
+            <p>Bem-vindo ao meu jogo em desenvolvimento. Uma jornada dificil está por vir.</p>
+
+            <div class="screenshot-container">
+                
+                <div class="screenshot">
+                    <img src="screenshot1.png" alt="Screenshot do jogo">
+                </div>
+                
+                <div class="screenshot">
+                    <img src="screenshot2.png" alt="Screenshot do jogo">
+                </div>
+            </div>
+            <iframe id="iframe1" class="iframe1" src="game.html"></iframe>
+            <div>
+            </div>
+            <p>Para contato, feedback ou ideias, entre em contato com a gente pelo Discord abaixo:</p>
+            <p href="#" class="ass">@raic.e</a>
+        </div>
+    </div>
+</body>
+</html>
